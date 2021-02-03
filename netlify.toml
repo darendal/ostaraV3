@@ -1,12 +1,12 @@
 # example netlify.toml
 [build]
   command = "npm run build"
-  functions = "src/functions"
+  functions = "lambda"
   publish = "dist/ostaraV3"
 
 [dev]
   command = "npm start"
   port = 4201
   publish = "src"
-  functions = "src/functions"
+  functions = "lambda"
   autoLaunch = false
