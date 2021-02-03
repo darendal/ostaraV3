@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "ostaraV3"
+  "defaultProject": "ostaraV3",
+  "cli": {
+    "analytics": false
+  }
 }
