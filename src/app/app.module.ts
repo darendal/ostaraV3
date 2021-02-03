@@ -7,6 +7,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { ShopCardComponent } from './components/shop-card/shop-card.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ShopCardComponent } from './components/shop-card/shop-card.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatButtonModule,
     MatCardModule
   ],
   providers: [],
