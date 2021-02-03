@@ -4,6 +4,11 @@
   functions = "lambda"
   publish = "dist/ostaraV3"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [dev]
   command = "npm start"
   port = 4201
