@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { ShopCardComponent } from './components/shop-card/shop-card.component';
 import {MatButtonModule} from '@angular/material/button';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatCardModule
   ],

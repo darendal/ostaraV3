@@ -1,5 +1,16 @@
 <div>
-  <ul *ngFor="let product of products | async">
-    <app-shop-card [product]="product"></app-shop-card>
-  </ul>
+  <div
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutGap="26px grid"
+    fxLayoutAlign="space-around start">
+    <ng-container *ngFor="let product of products | async">
+      <app-shop-card
+        fxFlex="0 1 calc(25% - 26px)"
+        fxFlex.lt-md="0 1 calc(50% - 26px)"
+        fxFlex.lt-sm="100%"
+        [product]="product"
+      ></app-shop-card>
+    </ng-container>
+  </div>
 </div>

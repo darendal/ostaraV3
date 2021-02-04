@@ -27,7 +27,7 @@ function createProduct(obj: any): Product {
     : null;
 
   if (image) {
-    product.image = imageUrlBuilder(sanity).image(image).size(300, 300).fit('fillmax').url();
+    product.image = imageUrlBuilder(sanity).image(image).size(300, 300).fit('fillmax').bg('ffff').url();
   }
 
   return product;
