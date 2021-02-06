@@ -1,0 +1,57 @@
+<div class="product">
+  <div *ngIf="productObservable | async as product; else loading" fxFlex fxLayout="column">
+    <h3 class="title">{{product.name}}</h3>
+    <div class="flex-container" fxFlex fxLayout="row" fxlayout.sm="column" fxLayout.xs="column" fxLayoutGap="50px">
+
+      <div fxFlex>
+        <img class="main-image" src="{{product.image}}" alt="{{product.name}}">
+      </div>
+      <div fxFlex>
+        <div fxFlex fxLayout="column" fxLayoutGap="10px">
+          <div fxFlex>
+            <button mat-raised-button color="primary" >
+              <mat-icon [inline]="true">shopping_cart</mat-icon>
+            </button>
+          </div>
+          <div fxFlex>
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                  Price
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Stock
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Weight (approx.)
+                </td>
+                <td>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div fxFlex>
+            <h5>Description</h5>
+            <p class="description">
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <ng-template #loading >
+    <mat-spinner [diameter]="200"></mat-spinner>
+  </ng-template>
+</div>
+

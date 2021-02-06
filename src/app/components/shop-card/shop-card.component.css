@@ -3,3 +3,7 @@ mat-card {
   filter: drop-shadow(0 0 0.5rem rgba(107, 119, 86, 0.17));
 }
 mat-card-header { justify-content: center;}
+
+.card-link {
+  text-decoration: none;
+}

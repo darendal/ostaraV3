@@ -1,13 +1,11 @@
-<div>
-  <mat-card>
-    <img src="{{product.image}}" alt="{{product.name}}">
-    <mat-card-header>
-      <mat-card-title>{{product.name}}</mat-card-title>
-      <mat-card-subtitle>{{product.description}}</mat-card-subtitle>
-    </mat-card-header>
-
-    <mat-card-footer>
-      <button mat-raised-button color="primary">Add to cart</button>
-    </mat-card-footer>
-  </mat-card>
+<div *ngIf="product">
+  <a routerLink="/shop/product/{{product.id}}" class="card-link">
+    <mat-card>
+      <img src="{{product.image}}" alt="{{product.name}}">
+      <mat-card-header>
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>{{product.description}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </a>
 </div>
