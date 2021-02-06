@@ -10,6 +10,7 @@ import {Product} from '../models/product';
 export class ProductService {
 
   static GET_PRODUCTS: string = environment.functionsEndpoint + 'getProducts';
+  static GET_PRODUCT_BY_ID: string = environment.functionsEndpoint + 'getProductById';
 
   constructor(private http: HttpClient) { }
 
@@ -19,5 +20,14 @@ export class ProductService {
         'Content-Type': 'application/json'
       },
     });
+  }
+
+  getProductById(productId: string): Observable<Product> {
+    return this.http.get<Product>(`${ProductService.GET_PRODUCT_BY_ID}?id=${productId}`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    });
+
   }
 }
