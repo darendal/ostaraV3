@@ -9,14 +9,14 @@
       <div fxFlex>
         <div fxFlex fxLayout="column" fxLayoutGap="10px">
           <div fxFlex>
-            <button mat-raised-button color="primary" >
-              <mat-icon [inline]="true"
-                        [attr.data-item-url]="product.url"
-                        [attr.data-item-id]="product.id"
-                        [attr.data-item-price]="product.price"
-                        [attr.data-item-description]="product.description"
-                        [attr.data-item-image]="product.image"
-                        [attr.data-item-name]="product.name">
+            <button mat-raised-button color="primary" class="button--buy snipcart-add-item"
+                    [attr.data-item-url]="product.url"
+                    [attr.data-item-id]="product.id"
+                    [attr.data-item-price]="product.price"
+                    [attr.data-item-description]="product.description"
+                    [attr.data-item-image]="product.image"
+                    [attr.data-item-name]="product.name">
+              <mat-icon [inline]="true">
                 shopping_cart
               </mat-icon>
             </button>
